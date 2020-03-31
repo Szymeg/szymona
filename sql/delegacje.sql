@@ -30,7 +30,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `delegacje` (
   `Lp` int(11) NOT NULL,
-  `Imię_i_Nazwisko` varchar(255) DEFAULT NULL,
+  `Imie_i_Nazwisko` varchar(255) DEFAULT NULL,
   `Data_od` date DEFAULT NULL,
   `Data_do` date DEFAULT NULL,
   `Miejsce_wyjazdu` varchar(255) DEFAULT NULL,
@@ -41,7 +41,7 @@ CREATE TABLE `delegacje` (
 -- Dumping data for table `delegacje`
 --
 
-INSERT INTO `delegacje` (`Lp`, `Imię_i_Nazwisko`, `Data_od`, `Data_do`, `Miejsce_wyjazdu`, `Miejsce_przyjazdu`) VALUES
+INSERT INTO `delegacje` (`Lp`, `Imie_i_Nazwisko`, `Data_od`, `Data_do`, `Miejsce_wyjazdu`, `Miejsce_przyjazdu`) VALUES
 (1, 'Dominik Kot', '2020-01-01', '2020-01-05', 'Poznań', 'Wrocław'),
 (2, 'Marek Kraj', '2020-01-01', '2020-01-05', 'Poznań', 'Wrocław'),
 (3, 'Marta Witkowska', '2020-01-23', '2020-01-30', 'Poznań', 'Kraków'),

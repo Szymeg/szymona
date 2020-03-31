@@ -58,7 +58,7 @@
           
             if ($resultCheck > 0) {
               while ($row = mysqli_fetch_assoc($result)) { #tablica rzędów
-                echo "<tr><td>" . $row["Lp"] . "</td><td>" . $row["Imię_i_Nazwisko"] . "</td><td>" . $row["Data_od"] . "</td><td>" . $row["Data_do"] . "</td><td>" . $row["Miejsce_wyjazdu"] . "</td><td>" . $row["Miejsce_przyjazdu"] . "</td></tr>";
+                echo "<tr><td>" . $row["Lp"] . "</td><td>" . $row["Imie_i_Nazwisko"] . "</td><td>" . $row["Data_od"] . "</td><td>" . $row["Data_do"] . "</td><td>" . $row["Miejsce_wyjazdu"] . "</td><td>" . $row["Miejsce_przyjazdu"] . "</td></tr>";
               }
             }
             else {
