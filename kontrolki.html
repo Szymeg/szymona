@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Optional JavaScript -->
+    <script src="scripts.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <!--other tags-->
+    <title>Zadanie zdalne e-MSI</title>
+    <!--nie działa jak wklejam do styles.css-->
+    <style>
+        select#kolory option[value="green"] {
+            background:green;
+        }
+        select#kolory option[value="blue"] {
+            background: blue;
+        }
+        select#kolory option[value="grey"] {
+            background: grey;
+        }
+        select#kolory option[value="cyan"] {
+            background: cyan;
+        }
+        select#kolory option[value="navy"] {
+            background: navy;
+        }
+        select#kolory option[value="red"] {
+            background: red;
+        }
+        select#kolory option[value="white"] {
+            background: white;
+        }
+    </style>
+  </head>
+  
+  <body>
+    <div class="row container-fluid">
+        <div id="Lewy" class="col-sm-3">
+            <nav class="nav flex-column nav-pills">
+                <a class="nav-link active" href="kontrolki.html">Różne kontrolki HTML</a>
+                <a class="nav-link" href="pracownicy.html">Tabela Pracowników</a>
+                <a class="nav-link" href="vat.html ">Tabela Faktur VAT</a>
+                <a class="nav-link" href="delegacje.php">Tabela Delegacji BD</a>
+                <a class="nav-link" href="kontrahenci.php">Dane Kontrahentów</a>
+            </nav>
+        </div>
+        <div class="col-sm-9" id="Prawy">
+            <p>
+                <h2>DANE KONTRAHENTA</h2>
+                <form>
+                    <div class="form-group">
+                      <label for="nip">NIP</label>
+                      <input type="text" class="form-control" id="nip" placeholder="podaj NIP">
+                    </div>
+                    <div class="form-group">
+                        <label for="regon">REGON</label>
+                        <input type="number" class="form-control" id="regon" min="100000000" max="999999999" placeholder="Podaj REGON">
+                    </div>
+                    <div class="form-group">
+                        <label for="nazwa">NAZWA</label>
+                        <input type="text" class="form-control" id="nazwa" placeholder="Podaj nazwę">
+                    </div>
+                    <div class="form-group">
+                        <label for="data">DATA POWSTANIA</label>
+                        <input type="date" class="form-control" id="data">
+                    </div>
+                    <div class="form-group">
+                        <label for="ulica">ULICA</label>
+                        <input type="text" class="form-control" id="ulica" placeholder="Podaj ulicę">
+                    </div>
+                    <div class="form-group">
+                        <label for="nrdomu">NUMER DOMU</label>
+                        <input type="text" class="form-control" id="nrdomu" placeholder="Podaj nr domu">
+                    </div>
+                    <div class="form-group">
+                        <label for="nrmieszkania">NUMER MIESZKANIA</label>
+                        <input type="text" class="form-control" id="nrmieszkania" placeholder="Podaj nr mieszkania">
+                    </div>
+                    <div class="form-group">
+                      <label for="uwagi">UWAGI</label>
+                      <textarea class="form-control" id="uwagi" rows="3" placeholder="Uwagi..."></textarea>
+                    </div>
+                </form>
+            </p>
+            <p>
+                <label for="kolory">Wybierz kolor:</label>
+                <!--do ew. zrobienia funkcja-->
+                <select id="kolory" class="" onchange="funkcja()">
+                    <option value="green" class="green">zielony</option>
+                    <option value="blue" class="blue">niebieski</option>
+                    <option value="grey" class="grey">szary</option>
+                    <option value="cyan" class="cyan">turkusowy</option>
+                    <option value="navy" class="navy">granatowy</option>
+                    <option value="red" class="red">czerwony</option>
+                    <option value="white" class="white">biały</option>
+                  </select>
+            </p>
+            <p>
+                <label for="vat">Wybierz vat:</label>
+                <select id="vat">
+                    <option value="zw">ZW</option>
+                    <option value="np">NP.</option>
+                    <option value="0">0%</option>
+                    <option value="3">3%</option>
+                    <option value="8">8%</option>
+                    <option value="23">23%</option>
+                  </select>
+            </p>
+            <p>
+                <ol>
+                    <li>Element</li>
+                    <li>Element</li>
+                    <li>Element</li>
+                </ol>
+            </p>
+        </div>
+    </div>
+  </body>
+</html>
